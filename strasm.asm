@@ -16,7 +16,7 @@ main:
     
     lea rcx, [fmt]
     mov rdi, qword [rdx + 8]
-    cld ; Let's set direction flag just in case
+    cld ; Let's clear direction flag just in case
     call strlen
 
     mov rsi, rax
