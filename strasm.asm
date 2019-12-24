@@ -16,7 +16,7 @@ main:
     
     lea rcx, [fmt]
     mov rdi, qword [rdx + 8]
-    cld ; Let's set direction flag hust in case
+    cld ; Let's set direction flag just in case
     call strlen
 
     mov rsi, rax
@@ -63,7 +63,7 @@ usage:
     xor rax, rax
     call exit
 
-; fastcall conention
+; fastcall convention
 ; rdi <- pointer to string
 strlen:
     mov rsi, rdi
